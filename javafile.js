@@ -24,7 +24,7 @@ function start() {
         document.getElementById("message").textContent = "Please type the number first"
     }if (score == 50) {
         document.querySelector(".alert").classList.remove("hidden")
-        document.getElementById("p-win-lose").textContent = "Congratulations! you won the game in "+tries+" tries."
+        document.getElementById("p-win-lose").textContent = "Congratulations! you won the game."
     }if (tries == 0) {
         document.querySelector(".alert").classList.remove("hidden")
         document.getElementById("p-win-lose").textContent = "Sorry you lose the game! because there is no more attemps it was " + perfectNum
