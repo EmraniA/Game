@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random number game | Azeddine</title>
+  <link rel="Websit Icon" href="Images/image.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="javafile.js"></script>
+</head>
+<body>
+  <section class="all-div">
+    <div class="ran-div">
+      <p class="score">Score : <span id="score">0</span>/50</p>
+      <p class="tries">Tries : <span id="try">25</span></p>
+      <p>Try to guess the number between 1 to 100</p>
+      <div>
+        <input type="number" id="input" placeholder="Type here">
+        <button onclick="start()" class="start">Start</button>
+      </div>
+      <div class="output">
+        <p id="message"></p>
+      </div>
+      <button class="help-button" onclick="help()">HELP</button>
+    </div>
+  </section>
+  <section class="alert-section">
+  <div class="alert hidden">
+    <p id="p-win-lose"></p>
+    <div>
+    <button class="buttona" onclick="restart()">Restart</button>
+    <a href="https://www.google.com/"><button class="buttona">Exit</button></a>
+    </div>
+  </div>
+  </section>
+  <section class="help-section">
+    <div class="help hidden">
+      <p id="help-message"></p>
+      <button class="ok-button" onclick="okay()">ok</button>
+    </div>
+  </section>
+</body>
+</html>
